@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+<main>
+  <div class="container">
+    <div class="screen">
+        <input type="text" id="display" disabled>
+    </div>
+
+     
+    <div class="btn-container">
+        <div class="row">
+            <input type="button" class="btn hi" value="Hi">
+            <input type="button" class="btn btn-secondary" value="C" onclick="clean()">
+            <input type="button" class="btn btn-secondary" value="&larr;" onclick="back()" >
+            <input type="button" class="btn btn-primary" value="&#247;" onclick="insert('/')">
+        </div>
+
+        <div class="row">
+            <input type="button" class="btn " value="7" onclick="insert(7)">
+            <input type="button" class="btn " value="8" onclick="insert(8)">
+            <input type="button" class="btn " value="9" onclick="insert(9)">
+            <input type="button" class="btn btn-primary" value="x" onclick="insert('*')">
+        </div>
+
+        <div class="row">
+            <input type="button" class="btn " value="4" onclick="insert(4)">
+            <input type="button" class="btn " value="5" onclick="insert(5)">
+            <input type="button" class="btn " value="6" onclick="insert(6)">
+            <input type="button" class="btn btn-primary" value="-" onclick="insert('-')">
+        </div>
+    
+        <div class="row">
+            <input type="button" class="btn " value="1" onclick="insert(1)">
+            <input type="button" class="btn " value="2" onclick="insert(2)">
+            <input type="button" class="btn " value="3" onclick="insert(3)">
+            <input type="button" class="btn btn-primary" value="+" onclick="insert('+')">
+        </div>
+
+        <div class="row5">
+            <input type="button" class="btn zero" value="0" onclick="insert(0)" >
+            <input type="button" class="btn " value="." onclick="insert('.')">
+            <input type="button" class="btn btn-primary" value="=" onclick="equalTo()">
+        </div>
+   </div>
+</div>
+</main>
+<script type="text/javascript" src="main.js"></script>
+    </body>
+</html

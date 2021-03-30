@@ -1,0 +1,110 @@
+* {
+margin: 0px;
+padding: 0px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(128, 0, 128);
+}
+
+.container{
+    width: 327px;
+    height: max-content;
+    background-color:black;
+    border:5px solid gray;
+    border-radius: 30px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    width:55px;
+    height:55px;
+    font-size: 25px;
+    background-color: rgb(51, 50, 50);
+    margin: 5px 10px 5px 10px;
+    cursor:pointer;
+    border: none;
+    border-radius: 50%;
+    color:white;
+}
+.btn:focus, .btn:hover, .btn:active{
+    outline: none;
+}
+
+.btn-primary{
+    background-color: rgb(17, 199, 17);
+}
+
+
+.btn-secondary{
+    background-color: hsl(0, 0%, 50%);
+}
+
+
+.row5{
+    display: flex;
+}
+
+
+.zero{
+    border-radius: 5rem;
+    flex-grow: 1;
+    
+}
+
+.screen{
+    width: 300px;
+}
+
+
+#display{
+    width: 100%;
+    height: 100px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 1px solid grey;
+    margin-bottom: 8px;
+    text-align: right;
+    font-size: 25px;
+}
+
+.hi{
+     animation-name: colorful; 
+     animation-duration: 5s;
+    animation-iteration-count: infinite; 
+}
+      @keyframes colorful {
+           0% {
+                background-color: blue; 
+            }
+           25%{
+               background-color: red;
+           }
+           50%{
+               background-color: green;
+           }
+           75%{
+               background-color: purple;
+           }
+     100% {
+          background-color: yellow;
+         }
+     }
+
+
+     @media screen and (max-width: 540px){
+         .container{
+             width: max-content;
+             height: max-content;
+         }
+     }
+
