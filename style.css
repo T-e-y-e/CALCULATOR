@@ -105,7 +105,7 @@ main{
 
      @media screen and (max-width: 540px){
          main{
-             min-height: 100vh;
+             max-height: 100vh;
          }
          .container{
              width: max-content;
